@@ -26,7 +26,7 @@ def fmt_report_from_cpplint_to_cppcheck():
     sys.stderr.write("""<errors>\n""")
 
     compiled_regex = re.compile(
-        "([^:]*):([0-9]*):  ([^\[]*)\[([^\]]*)\] \[([0-9]*)\].*"
+        r"([^:]*):([0-9]*):  ([^\[]*)\[([^\]]*)\] \[([0-9]*)\].*"
     )
 
     for line in sys.stdin.readlines():
