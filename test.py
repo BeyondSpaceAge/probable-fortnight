@@ -16,6 +16,7 @@ def cpplint_score_to_cppcheck_severity(err_score):
         return "warning"
     if err_score == 5:
         return "error"
+    return ""
 
 
 def fmt_report_from_cpplint_to_cppcheck():
